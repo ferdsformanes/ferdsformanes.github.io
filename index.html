@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="theme-switch">
+    <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+    </label>
+    <span class="label-text">Dark Mode</span>
+</div>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Ferds Formanes - Network Automation Engineer</h1>
+        <p>
+            I specialize in automating network tasks using Python, Netmiko, and REST APIs, 
+            and I am currently deepening my expertise in programming to further enhance my automation capabilities.
+        </p>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Backup Script for Cisco & HP Switches</h3>
+                <p>Python script using Netmiko to back up config from multiple devices.</p>
+                <a href="scripts/network_device_class_example.py" download>Download Script</a>
+            </li>
+            <li>
+                <h3>Meraki Dashboard API Automation</h3>
+                <p>Script to fetch device inventory and create reports in CSV.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>CCNP Enterprise</li>
+            <li>CCNA</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Grafana (Monitoring & Dashboards)</li>
+            <li>SQL and PostgreSQL</li>
+            <li>Git and GitHub</li>
+            <li>Linux Command Line</li>
+            <li>Python Programming</li>
+            <li>Network Automation (Netmiko, REST APIs)</li>
+        </ul>
+    </section>
+
+    <section id="youtube">
+    <h2>YouTube Channel</h2>
+    <p>
+        I create programming tutorials, automation scripts, and walkthroughs on network engineering topics.
+        Check out my channel:
+        <a href="https://www.youtube.com/@FerdsTechChannel" target="_blank">
+            youtube.com/@FerdsTechChannel
+        </a>
+    </p>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/0zcX3cJVgx0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ferdsformanes" target="_blank">linkedin.com/in/ferdsformanes</a></p>
+    </section>
+    <script>
+        const toggleInput = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-theme');
+            toggleInput.checked = true;
+        }
+
+        toggleInput.addEventListener('change', () => {
+            body.classList.toggle('dark-theme');
+            const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Ferds Formanes Portfolio</p>
+    </footer>
+</body>
+</html>
