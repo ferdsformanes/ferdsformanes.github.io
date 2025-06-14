@@ -1,52 +1,43 @@
-/* Dark Theme Overrides */
+/* Dark Theme */
 body.dark-theme {
-    background-color: black;
-    color: white;
+  background-color: rgb(48, 48, 48);
+  color: white;
 }
 
-body.dark-theme header h1 {
-    color: skyblue;
-}
-
-body.dark-theme header p {
-    color: lightblue;
-}
-
-body.dark-theme nav ul {
-    background-color: dimgray;
-}
-
-body.dark-theme nav ul li a {
-    color: salmon;
-}
-
-body.dark-theme nav ul li a:hover {
-    background-color: gray;
-}
-
-body.dark-theme section h2 {
-    color: orchid;
-    border-bottom: 1px solid darkgray;
-}
-
-body.dark-theme h3 {
-    color: mediumaquamarine;
-}
-
-body.dark-theme a {
-    color: khaki;
-}
-
+/* Main & Sections */
+body.dark-theme main,
+body.dark-theme section,
+body.dark-theme section h2,
+body.dark-theme section h3,
 body.dark-theme section ul li,
-body.dark-theme section p {
-    color: white;
+body.dark-theme section p,
+body.dark-theme a {
+  color: white;
 }
 
-body.dark-theme section {
-    background-color: #333;
-    box-shadow: 0 0 10px black;
+/* Header */
+body.dark-theme header {
+  background-color: rgb(27, 27, 27);
+}
+body.dark-theme header h1,
+body.dark-theme header p {
+  color: black;
+  background-color: white;
 }
 
+/* Navigation */
+body.dark-theme nav ul {
+  font-weight: bold;
+}
+body.dark-theme nav ul li a {
+  color: white;
+}
+body.dark-theme nav ul li a:hover {
+  color: white;
+  background-color: rgb(46, 44, 44);
+}
+
+/* Theme Toggle */
 body.dark-theme .label-text {
-    color: white;
+  color: white;
 }
