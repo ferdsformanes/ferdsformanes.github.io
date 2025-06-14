@@ -1,0 +1,52 @@
+/* Dark Theme Overrides */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body.dark-theme header h1 {
+    color: skyblue;
+}
+
+body.dark-theme header p {
+    color: lightblue;
+}
+
+body.dark-theme nav ul {
+    background-color: dimgray;
+}
+
+body.dark-theme nav ul li a {
+    color: salmon;
+}
+
+body.dark-theme nav ul li a:hover {
+    background-color: gray;
+}
+
+body.dark-theme section h2 {
+    color: orchid;
+    border-bottom: 1px solid darkgray;
+}
+
+body.dark-theme h3 {
+    color: mediumaquamarine;
+}
+
+body.dark-theme a {
+    color: khaki;
+}
+
+body.dark-theme section ul li,
+body.dark-theme section p {
+    color: white;
+}
+
+body.dark-theme section {
+    background-color: #333;
+    box-shadow: 0 0 10px black;
+}
+
+body.dark-theme .label-text {
+    color: white;
+}

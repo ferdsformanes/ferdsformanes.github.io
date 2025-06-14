@@ -1,0 +1,141 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base Layout */
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    color: black;
+}
+
+/* Header Styles */
+header h1 {
+    color: navy;
+}
+
+header p {
+    color: teal;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0 0 30px;
+    display: flex;
+    gap: 20px;
+    background-color: lightgray;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: maroon;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+/* Section Headings and Content */
+section h2 {
+    color: purple;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: seagreen;
+}
+
+section ul li,
+section p {
+    color: black;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+/* Links */
+a {
+    color: saddlebrown;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Theme Switch Label */
+.label-text {
+    font-family: sans-serif;
+    color: black;
+}
+
+/* Toggle Switch Styles */
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    border-radius: 24px;
+    transition: background-color 0.3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+input:checked + .slider {
+    background-color: deepskyblue;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
