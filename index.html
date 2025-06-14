@@ -8,17 +8,15 @@
     <link rel="stylesheet" href="dark.css">
 </head>
 <body>
-
     <header id="home">
     <nav>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul id="nav-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#youtube">YouTube Channel</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#youtube">YouTube Channel</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     </header>
@@ -114,10 +112,7 @@
             const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
             localStorage.setItem('theme', theme);
         });
-        function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('show');
-        }
+
 </script>
 
 </body>
