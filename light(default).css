@@ -169,7 +169,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   nav ul {
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -181,22 +181,4 @@ input:checked + .slider:before {
     padding: 8px 12px;
     font-size: 1rem;
   }
-}
-@media (max-width: 480px) {
-  header {
-    height: 40px;
-  }
-
-  nav ul {
-    font-size: 0.9rem;
-  }
-
-  nav ul li a {
-    padding: 6px 10px;
-  }
-
-  .theme-switch {
-    font-size: 0.9rem;
-    padding: 2px 4px;
-  }
-}
+} */
